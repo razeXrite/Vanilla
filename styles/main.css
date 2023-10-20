@@ -1,0 +1,147 @@
+html,
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #39363E;
+}
+
+header {
+box-shadow: 0 0 0 3px #f96b3b;
+}
+header {
+    position: relative;
+    z-index: 50;
+    width: 100%;
+    height: 80px;
+    background-color: #39363E;
+}
+
+.header__inner {
+    display: flex;  
+}
+
+.header__inner img {
+    margin: 10px 40% 10px 10%;
+    height: 60px;
+    width: auto;
+}
+
+.header__text {
+    width: 100%;
+    
+}
+
+
+.header__text a {
+    margin-right: 13%;
+    margin-top: 3%;
+    font-size: 18px;
+    font-weight: 600;
+    color: #CCCCCC;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.header__text a::after {
+    content: '';
+    display: block;
+    background-color: white;
+    width: 0%;
+    height: 1px;
+    transition: width .3s ease-in-out;
+}
+
+.header__text a:hover::after {
+    width: 100%;
+}
+.header__text button{
+width: 207px;
+height: 40px;
+border:0;
+flex-shrink: 0;
+border-radius: 30px;
+background: #FF855D;
+transition: all 0.3s;
+color: white;
+}
+.header__text button:hover{
+background-color: #f96b3b;
+}
+
+.picture{
+    width: 100%;
+    height: 800px;
+    background: url(../assets/picture.png);
+    background-repeat: no-repeat;
+}
+.heading{
+    text-align: center;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    padding-top:300px ;
+    line-height: normal;
+}
+.line_cont{
+    width: 100%;
+    position: relative;
+    margin-top: 8px;;
+}
+.linechild{
+    position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 319px;
+	height: 1px;
+    background-color: #FFF;
+
+}
+.text{
+margin-top:30px ;
+color: #FFF;
+font-size: 40px;
+text-align: center;
+}
+.calc{
+    width: 100%;
+    height: 1025px;
+
+}
+.h1{
+    text-align: center;
+    color: #FFF;
+}
+
+.title{
+    text-align: center;
+    color: #FFF;
+}
+.maincalc{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+    
+}
+.formcalc{
+    width: 300px;
+    height: 200px;
+    border:2px solid #FF855D; 
+    border-radius: 20px;
+}
+.home{
+    position: static;
+}
+ #ran{
+    width: 100%;
+    accent-color: coral;
+    
+}
+
+.formcalc label{
+color: white;
+}
