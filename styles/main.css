@@ -3,6 +3,7 @@ body{
     padding: 0;
     margin: 0;
     background-color: #39363E;
+    box-sizing: border-box;
 }
 
 header {
@@ -144,4 +145,79 @@ text-align: center;
 
 .formcalc label{
 color: white;
+}
+
+.about {
+    background: #fff;
+    padding-bottom: 10%;
+}
+
+.contactUs {
+    font-size: 30px;
+    padding-top: 8%;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+.aboutBlock {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.contacts h3 {
+    font-size: 24px;
+    margin-bottom: 11px;
+    margin-top: 3%;
+}
+
+.contacts p,
+a {
+    font-size: 24px;
+    color: #7D7D7D;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.img-block img {
+    margin-top: 3%;
+    margin-right: 23px;
+}
+
+.inputsBlock {
+    margin-top: 1.5%;
+}
+
+.inputsBlock input, textarea {
+    font-size: 22px;
+    color: #7D7D7D;
+    padding-left: 35px;
+    width: 526px;
+    height: 65px;
+    border: 3px #FF855D solid;
+    border-radius: 5px;
+    margin-bottom: 6.1%;
+}
+
+.inputsBlock textarea {
+    padding-top: 10px;
+    height: 131px;
+}
+
+.inputsBlock .btn {
+    width: 569px;
+    height: 65px;
+    background: #FF855D;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.requireAboutus {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-left: 18%;
 }
