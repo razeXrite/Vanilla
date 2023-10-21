@@ -129,16 +129,18 @@ text-align: center;
     
 }
 .formcalc{
-    width: 300px;
-    height: 200px;
+    width: 450px;
+    height: 220px;
     border:2px solid #FF855D; 
     border-radius: 20px;
 }
 .home{
     position: static;
 }
- #ran{
-    width: 100%;
+ #myRange{
+    width: 90%;
+    text-align: center;
+    margin-left: 22px;
     accent-color: coral;
     
 }
@@ -220,4 +222,49 @@ a {
     font-size: 24px;
     margin-top: 10px;
     margin-left: 18%;
+}
+.S{
+    color: white;
+    text-align: center;
+}
+.select{
+    margin-top:21px ;
+    margin-left: 22px;
+    border: 2px solid #FF855D;
+    border-radius: 20px;
+    width: 90%;
+    background-color: #282c34;;
+    height: 30px;
+    text-align: center;
+    color: #FFF;
+
+
+}
+.continue{
+    border: 2px solid #FF855D;
+    border-radius: 20px;
+    margin-top: 29px;
+    margin-left: 106px;
+    width: 50%;
+    height: 30px;
+    background-color: #282c34;;
+    color: #FFF;
+    transition: all 0.3s;
+    
+
+}
+.continue:hover{
+    color: #FFF;
+    background-color: #FF855D;
+
+
+}
+.home_container{
+    margin-top: -110px;
+}
+
+.home_container .home{
+    width: 600px;
+    height: 400px;
+
 }
