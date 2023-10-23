@@ -1,62 +1,65 @@
 const circles = document.querySelectorAll('.circle');
+let lastModalContent = 0;
+let lastButton = 0;
 
-circles.forEach((circle) => {
-    circle.addEventListener('click', () => {
-        openModal();
-    })
-})
+circles.forEach(circle => {
+    circle.addEventListener('click', openModal);
+});
 
-
-function openModal(e) {
+function openModal() {
     const modal = document.querySelector('.modal');
-    modal.style.display = 'block';
-
-    const leftModal = document.querySelector('.modal_main')
-    const rightModal = document.querySelector('.win2')
-
-    const penopolist = document.querySelector('.penopolist')
+    const penopolist = document.querySelector('.penopolist');
     const penopolistBtn = document.getElementById('penopolist');
-
-    const mineral = document.querySelector('.mineral')
+    const mineral = document.querySelector('.mineral');
     const mineralBtn = document.getElementById('mineral');
 
-    // Открытие двух разных модалок
     penopolistBtn.addEventListener('click', () => {
-        openPenopolistModal();
-        penopolistBtn.classList.add('active');
-        mineralBtn.classList.remove('active');
+        openModalContent('penopolist', penopolistBtn);
     });
 
     mineralBtn.addEventListener('click', () => {
-        openMineralModal()
-        mineralBtn.classList.add('active');
-        penopolistBtn.classList.remove('active');
+        openModalContent('mineral', mineralBtn);
     });
 
-    function openPenopolistModal() {
-        mineral.style.display = 'none';
-        penopolist.style.display = 'block';
-    }
+    modal.addEventListener('click', closeModal);
 
-    function openMineralModal() {
-        penopolist.style.display = 'none';
-        mineral.style.display = 'block';
-    }
+    modal.style.display = 'block';
 
+    // Открытие модалки с контентом (справа которая)
+    function openModalContent(content, btn) {
+        if (lastModalContent) {
+            lastModalContent.style.display = 'none';
+        }
+        if (lastButton) {
+            lastButton.classList.remove('active');
+        }
 
-    // Закрытие модалки 
-    modal.addEventListener('click', (e) => {
-        closeModal(e);
-    })
-
-    function closeModal(e) {
-        if (e.target !== rightModal && e.target !== leftModal && !leftModal.contains(e.target)) {
-            modal.style.display = 'none';
+        if (content === 'penopolist') {
             mineral.style.display = 'none';
+            penopolist.style.display = 'block';
+            lastModalContent = penopolist;
+        } else if (content === 'mineral') {
             penopolist.style.display = 'none';
-            mineralBtn.classList.remove('active')
-            penopolistBtn.classList.remove('active')
+            mineral.style.display = 'block';
+            lastModalContent = mineral;
+        }
+
+        btn.classList.add('active');
+        lastButton = btn;
+    }
+
+    // Закрытие обоих модалок
+    function closeModal(e) {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+            if (lastModalContent) {
+                lastModalContent.style.display = 'none';
+                lastModalContent = 0;
+            }
+            if (lastButton) {
+                lastButton.classList.remove('active');
+                lastButton = 0;
+            }
         }
     }
 }
-
