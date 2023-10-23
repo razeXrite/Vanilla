@@ -18,10 +18,10 @@
                 <a target='_blank' href='https://newlms.magtu@bk.ru'>https://newlms.magtu@bk.ru</a>
             </div>
             <div class="img-block">
-                <a target='_blank' href='#'><img src='./images/inst.svg' alt="Instagram" /></a>
-                <a target='_blank' href='#'><img src='./images/mail.svg' alt="Mail" /></a>
-                <a target='_blank' href='#'><img src='./images/tg.svg' alt="Telegram" /></a>
-                <a target='_blank' href='#'><img src='./images/vk.svg' alt="Vk" /></a>
+                <a target='_blank' href='#'><img src='./../images/inst.svg' alt="Instagram" /></a>
+                <a target='_blank' href='#'><img src='./../images/mail.svg' alt="Mail" /></a>
+                <a target='_blank' href='#'><img src='./../images/tg.svg' alt="Telegram" /></a>
+                <a target='_blank' href='#'><img src='./../images/vk.svg' alt="Vk" /></a>
             </div>
         </div>
         <form action="#" class="inputsBlock" method="POST">

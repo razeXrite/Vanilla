@@ -1,0 +1,384 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  background-color: #36363E;
+}
+
+.container_home {
+  display: flex;
+  justify-content: center;
+  margin-left: -3%;
+}
+
+.home {
+  margin-top: -5%;
+  position: absolute;
+}
+
+.roof {
+  position: absolute;
+  z-index: 5;
+
+}
+
+.floor1 {
+  position: absolute;
+}
+
+#attic {
+  display: flex;
+  align-items: center;
+  margin-top: -31%;
+  margin-left: 13%;
+}
+
+.circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #FF855D;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.line {
+  width: 350px;
+  height: 2px;
+  background-color: #FF855D;
+  z-index: 10;
+}
+
+.circle_empty {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #36363E;
+  border: 2px solid #FF855D;
+  overflow: hidden;
+  cursor: pointer;
+
+}
+
+#window {
+  display: flex;
+  align-items: center;
+  margin-top: 4%;
+  margin-left: 7.5%;
+}
+
+#window .line {
+  width: 300px;
+
+}
+
+#wall {
+  display: flex;
+  align-items: center;
+  margin-top: 2%;
+  margin-left: 15%;
+}
+
+#wall .line {
+  width: 340px;
+
+}
+
+#support {
+  display: flex;
+  align-items: center;
+  margin-top: 8%;
+  margin-left: 13%;
+}
+
+#support .line {
+  width: 370px;
+
+}
+
+#foundation {
+  display: flex;
+  align-items: center;
+  margin-top: 4%;
+  margin-left: 10%;
+}
+
+#foundation .line {
+  width: 300px;
+
+}
+
+#chimney {
+  display: flex;
+  align-items: center;
+  margin-top: -39%;
+  margin-left: 55%;
+}
+
+#chimney .line {
+  width: 340px;
+
+}
+
+#chimney .circle {
+
+  background-color: #36363E;
+  border: 2px solid #FF855D;
+  overflow: hidden;
+  z-index: 10;
+}
+
+#chimney .circle_empty {
+
+  background-color: #FF855D;
+  z-index: 10;
+}
+
+
+#floor {
+  display: flex;
+  align-items: center;
+  margin-top: 7%;
+  margin-left: 68%;
+}
+
+#floor .line {
+  width: 240px;
+
+}
+
+#floor .circle {
+
+  background-color: #36363E;
+  border: 2px solid #FF855D;
+  overflow: hidden;
+  z-index: 10;
+}
+
+#floor .circle_empty {
+
+  background-color: #FF855D;
+  z-index: 10;
+}
+
+#outerwall {
+  display: flex;
+  align-items: center;
+  margin-top: 8%;
+  margin-left: 73%;
+}
+
+#outerwall .line {
+  width: 240px;
+
+}
+
+#outerwall .circle {
+
+  background-color: #36363E;
+  border: 2px solid #FF855D;
+  overflow: hidden;
+  z-index: 10;
+}
+
+#outerwall .circle_empty {
+
+  background-color: #FF855D;
+  z-index: 10;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  margin-left: 5%;
+  border: 3px solid #FF855D;
+  padding: 21px;
+
+  bottom: 40px;
+}
+
+.totalPrice {
+  font-size: 32px;
+  color: aliceblue;
+}
+
+.total-price {
+  font-size: 24px;
+  color: aliceblue;
+
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #36363E;
+  border: 2px solid #FF855D;
+  color: white;
+  font-size: 18px;
+
+
+}
+
+button.circle_empty {
+
+  cursor: pointer;
+
+
+}
+
+.roof img {
+  width: 1400px;
+}
+
+.floor1 img {
+  width: 1400px;
+}
+
+.foundation img {
+  width: 1400px;
+}
+
+
+
+/* modalka */
+
+.plusi {
+  margin-top: 20px;
+}
+
+.plusi h3 {
+  color: #53C541;
+}
+
+.clock_text {
+  color: rgb(153, 153, 153);
+}
+
+.modal_main h1 {
+  font-size: 36px;
+}
+
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  z-index: 11;
+  display: flex;
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
+  visibility: auto;
+  display: none;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal_main {
+  position: absolute;
+  width: 380px;
+  margin-top: 2%;
+  background-color: #39363E;
+  height: 100%;
+  cursor: default;
+  z-index: 11;
+}
+
+.modal_btn:first-child {
+  margin-top: 53px;
+}
+
+.modal_btn {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  width: 333px;
+  border-radius: 16px;
+  padding: 10px;
+  border: 3px solid #FF855D;
+  height: 53px;
+  margin-top: 25px;
+  margin-left: 20px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.active {
+  border-color: #53C541;
+}
+
+.modal_main:last-child {
+  /* right: 0; */
+  left: auto;
+
+  /* width: 500px; */
+
+  color: white;
+
+}
+
+.modal_main:last-child h1 {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.modal_main:last-child p {
+  font-size: 22px;
+  margin-left: 22px;
+}
+
+.plusi {
+  display: flex;
+}
+
+.plusi img {
+  width: 37px;
+  height: 39px;
+  margin-left: 36px;
+}
+
+.plusi h3 {
+  margin-left: 26px;
+  line-height: 5px;
+  font-size: 22px;
+}
+
+.price {
+  border: 3px solid #FF855D;
+  border-radius: 20px;
+  width: 400px;
+  margin-left: 24px;
+  text-align: center;
+  height: 180px;
+  margin-top: 315px;
+
+}
+
+.price h3 {
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+.price button {
+  margin: 0;
+  margin-top: 50px;
+}
+
+/* Вторая модалка */
+.penopolist, .mineral {
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  width: 450px;
+  background-color: #39363E;
+  height: 100%;
+  cursor: default;
+  z-index: 10;
+}
+
+.modalDescr {
+  margin-top: 110px;
+}
