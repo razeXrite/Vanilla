@@ -63,7 +63,11 @@ require './../Header/Head.php';
         </div>
         <div class="container">
           <p class="totalPrice">Стоимость составляющих</p>
-          <p class="total-price">0 руб</p>
+          <p class="total-price">
+        <span class="number">0</span> 
+        <span class="currency">руб</span>
+    </p>
+
           <button class="button">Итоговая цена</button>
         </div>
       </div>
