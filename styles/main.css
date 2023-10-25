@@ -233,7 +233,8 @@ a {
     border: 2px solid #FF855D;
     border-radius: 20px;
     width: 90%;
-    background-color: #282c34;;
+    background-color:rgba(0, 0, 0, 0);
+    /* #282c34 */
     height: 30px;
     text-align: center;
     color: #FFF;
@@ -247,10 +248,9 @@ a {
     margin-left: 106px;
     width: 50%;
     height: 30px;
-    background-color: #282c34;;
+    background-color: rgba(0, 0, 0, 0);
     color: #FFF;
     transition: all 0.3s;
-    
 
 }
 .continue:hover{
@@ -267,4 +267,11 @@ a {
     width: 600px;
     height: 400px;
 
+}
+.terace{
+    margin-top: 5%;
+}
+
+.terace input[type="checkbox"]{
+    border: 30px solid orange;
 }

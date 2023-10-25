@@ -30,10 +30,13 @@ require './../Header/Head.php';
                                 <input type="range" min="1" max="1000" value="50" class="slider" id="myRange">
                             </div>
                             <select class='select'>
-                                <option class='option' disabled>Количество этажей</option>
+                                <option class='option' selected disabled>Количество этажей</option>
                                 <option class='option'>1</option>
                                 <option class='option'>2</option>
                             </select>
+                            <div class="terace">
+                               <center> <input type="checkbox"><label>Терасса</label><br> </center>
+                            </div>
                             <button class='continue'>Далее</button>
                         </form>
                     </div>
