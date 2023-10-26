@@ -21,29 +21,29 @@ require './../Header/Head.php';
           </div>
           <!-- {/* ЛИНИИ ВЫБОРА */} -->
           <div class="container_choice" id="attic">
-            <button class="circle_empty"></button>
-            <div class="line"></div>
             <div class="circle"></div>
+            <div class="line"></div>
+            <div class="circle_empty"></div>
           </div>
           <div class="container_choice" id="window">
-            <div class="circle_empty"></div>
+          <div class="circle"></div>
             <div class="line"></div>
-            <div class="circle"></div>
+            <div class="circle_empty"></div>
           </div>
           <div class="container_choice" id="wall">
-            <div class="circle_empty"></div>
+          <div class="circle"></div>
             <div class="line"></div>
-            <div class="circle"></div>
+            <div class="circle_empty"></div>
           </div>
           <div class="container_choice" id="support">
-            <div class="circle_empty"></div>
+          <div class="circle"></div>
             <div class="line"></div>
-            <div class="circle"></div>
+            <div class="circle_empty"></div>
           </div>
           <div class="container_choice" id="foundation">
-            <div class="circle_empty"></div>
+          <div class="circle"></div>
             <div class="line"></div>
-            <div class="circle"></div>
+            <div class="circle_empty"></div>
           </div>
           <div class="container_choice" id="chimney">
             <div class="circle_empty"></div>
@@ -64,9 +64,9 @@ require './../Header/Head.php';
         <div class="container">
           <p class="totalPrice">Стоимость составляющих</p>
           <p class="total-price">
-        <span class="number">0</span> 
-        <span class="currency">руб</span>
-    </p>
+            <span class="number">0</span>
+            <span class="currency">руб</span>
+          </p>
 
           <button class="button">Итоговая цена</button>
         </div>
