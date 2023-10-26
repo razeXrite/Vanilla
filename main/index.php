@@ -25,7 +25,7 @@ require './../Header/Head.php';
                     </div>
                     <div class='choice'>
                         <form class='formcalc'>
-                            <h2 class='S'>Площадь дома,<span id="demo"></span>м &#178;</h2>
+                            <h2 class='maintarg'>Площадь дома,<span id="demo"></span>м &#178;</h2>
                             <div class="slidecontainer">
                                 <input type="range" min="1" max="1000" value="50" class="slider" id="myRange">
                             </div>
@@ -35,7 +35,7 @@ require './../Header/Head.php';
                                 <option class='option'>2</option>
                             </select>
                             <div class="terace">
-                               <center> <input type="checkbox"><label>Терасса</label><br> </center>
+                               <div><input type="checkbox"><label>Терасса</label></div><br>
                             </div>
                             <button class='continue'>Далее</button>
                         </form>

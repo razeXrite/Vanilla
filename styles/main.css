@@ -29,6 +29,12 @@ header {
 
 .header__text {
     width: 100%;
+    display: flex;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     
 }
 
@@ -130,7 +136,7 @@ text-align: center;
 }
 .formcalc{
     width: 450px;
-    height: 220px;
+    height: 84%;
     border:2px solid #FF855D; 
     border-radius: 20px;
 }
@@ -223,10 +229,14 @@ a {
     margin-top: 10px;
     margin-left: 18%;
 }
-.S{
+
+.formcalc .maintarg{
     color: white;
     text-align: center;
+    margin-top: 5% !important;
+    margin: auto;
 }
+
 .select{
     margin-top:21px ;
     margin-left: 22px;
@@ -244,7 +254,7 @@ a {
 .continue{
     border: 2px solid #FF855D;
     border-radius: 20px;
-    margin-top: 29px;
+    
     margin-left: 106px;
     width: 50%;
     height: 30px;
@@ -268,10 +278,17 @@ a {
     height: 400px;
 
 }
-.terace{
-    margin-top: 5%;
-}
-
 .terace input[type="checkbox"]{
     border: 30px solid orange;
 }
+
+.terace{
+    margin-left: 5%;
+    margin-top: 5%;
+    
+}
+
+.terace div{
+
+}
+
