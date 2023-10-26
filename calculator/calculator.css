@@ -121,15 +121,93 @@ html {
 }
 
 #chimney .circle {
-
   background-color: #36363E;
   border: 2px solid #FF855D;
   overflow: hidden;
   z-index: 10;
 }
 
-#chimney .circle_empty {
+#attic .line {
+  width: 340px;
+}
 
+#attic .circle {
+  background-color: #36363E;
+  border: 2px solid #FF855D;
+  overflow: hidden;
+  z-index: 10;
+}
+
+#attic .circle_empty {
+  background-color: #FF855D;
+  z-index: 10;
+}
+
+#window .line {
+  width: 340px;
+}
+
+#window .circle {
+  background-color: #36363E;
+  border: 2px solid #FF855D;
+  overflow: hidden;
+  z-index: 10;
+}
+
+#window .circle_empty {
+  background-color: #FF855D;
+  z-index: 10;
+}
+
+#support .line {
+  width: 340px;
+}
+
+#support .circle {
+  background-color: #36363E;
+  border: 2px solid #FF855D;
+  overflow: hidden;
+  z-index: 10;
+}
+
+#support .circle_empty {
+  background-color: #FF855D;
+  z-index: 10;
+}
+
+#foundation .line {
+  width: 340px;
+}
+
+#foundation .circle {
+  background-color: #36363E;
+  border: 2px solid #FF855D;
+  overflow: hidden;
+  z-index: 10;
+}
+
+#foundation .circle_empty {
+  background-color: #FF855D;
+  z-index: 10;
+}
+
+#wall .line {
+  width: 340px;
+}
+
+#wall .circle {
+  background-color: #36363E;
+  border: 2px solid #FF855D;
+  overflow: hidden;
+  z-index: 10;
+}
+
+#wall .circle_empty {
+  background-color: #FF855D;
+  z-index: 10;
+}
+
+#chimney .circle_empty {
   background-color: #FF855D;
   z-index: 10;
 }
