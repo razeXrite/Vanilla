@@ -35,7 +35,9 @@ require './../Header/Head.php';
                                 <option class='option'>2</option>
                             </select>
                             <div class="terace">
-                               <div><input type="checkbox"><label>Терасса</label></div><br>
+                               <div><label class="orange-checkbox-container">Терасса
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span></label>
                             </div>
                             <button class='continue'>Далее</button>
                         </form>
