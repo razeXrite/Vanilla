@@ -6,7 +6,6 @@ require './../Header/Head.php';
 <body>
   <?php require './../Header/Header.php'; ?>
   <main>
-    <div>
       <div class="container_home">
         <div class="home">
           <!-- {/* ЧАСТИ ДОМА */} -->
@@ -61,7 +60,9 @@ require './../Header/Head.php';
             <div class="circle"></div>
           </div>
         </div>
-        <div class="container">
+      </div>
+          <div class="itog-flex">
+      <div class="container">
           <p class="totalPrice">Стоимость составляющих</p>
           <p class="total-price">
             <span class="number">0</span>
@@ -70,17 +71,18 @@ require './../Header/Head.php';
 
           <button class="button">Итоговая цена</button>
         </div>
-      </div>
+        </div>
 
       <div class='modal'>
         <div class="modal_main">
-          <h1>Утипление фасада дома</h1>
-          <button class='modal_btn' id="mineral">Минеральная вата</button>
-          <button class='modal_btn' id="penopolist">Экструзионный пенополист</button>
+          <h1>Фундамент</h1>
+          <button class='modal_btn' id="mineral">Винтовые сваи</button>
+          <button class='modal_btn' id="penopolist">Железобетонные сваи</button>
 
           <!-- Вторая модалка mineral -->
           <div class="win2">
             <div class='mineral'>
+              <h1 class="modalZag">Винтовые сваи</h1>
               <p class='modalDescr'>Минеральная (базальовая или кварцевая) <br />
                 вата - материал сделанный из натурального...</p>
               <div class="plusi">
@@ -91,9 +93,14 @@ require './../Header/Head.php';
                 <img src="img/fire.png" />
                 <h3>Негорючесть</h3>
               </div>
-              <div class="plusi">
-                <img src="img/clock.png" />
-                <h3 class='clock_text'>Недолговечность</h3>
+
+              <div class="material">
+                <h2>Материалы:</h2>
+                <ul>
+                  <li>Фундамент теплового контура <span>139 725</span> руб.</li>
+                  <li>Фундамент крыльца <span>12 938</span> руб.</li>
+                  <li>Фундамент террасы <span>7 763</span> руб.</li>
+                </ul>
               </div>
 
               <div class="price">
@@ -130,7 +137,6 @@ require './../Header/Head.php';
 
         </div>
       </div>
-    </div>
   </main>
   <script src="./../calculator/modal.js"></script>
 </body>
