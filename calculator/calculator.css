@@ -275,7 +275,6 @@ html {
   border-radius: 8px;
   margin-top: 39%;
   width: 30%;
-  margin-left: 3%;
 }
 
 .totalPrice {
@@ -441,11 +440,9 @@ button.circle_empty {
   border: 3px solid #FF855D;
   border-radius: 20px;
   width: 400px;
-  margin-left: 24px;
+  margin-left: 42px;
   text-align: center;
   height: 180px;
-  margin-top: 315px;
-
 }
 
 .price h3 {
@@ -455,7 +452,6 @@ button.circle_empty {
 
 .price button {
   margin: 0;
-  margin-top: 50px;
 }
 
 /* Вторая модалка */
@@ -464,13 +460,32 @@ button.circle_empty {
   display: none;
   top: 0;
   right: 0;
-  width: 450px;
+  width: 500px;
   background-color: #39363E;
   height: 100%;
   cursor: default;
   z-index: 10;
 }
 
-.modalDescr {
-  margin-top: 110px;
+.itog-flex{
+  display: flex;
+  justify-content: center;
+  margin-top: 3.5%;
+}
+.modalZag{
+  padding-top: 30px;
+}
+
+.material{
+  margin-top: 55%;
+}
+.material h2{
+  font-size: 28px;
+  margin-left: 20px;
+}
+.material ul li{
+  font-size: 22px;
+}
+.material span:first-child{
+  margin-left: 19px;
 }
