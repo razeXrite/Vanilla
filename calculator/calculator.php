@@ -97,7 +97,7 @@ require './../Header/Head.php';
               <div class="material">
                 <h2>Материалы:</h2>
                 <ul>
-                  <li>Фундамент теплового контура <span>139 725</span> руб.</li>
+                  <li>Фундамент теплового контура <span id="fundCost">0</span> руб.</li>
                   <li>Фундамент крыльца <span>12 938</span> руб.</li>
                   <li>Фундамент террасы <span>7 763</span> руб.</li>
                 </ul>
@@ -139,4 +139,6 @@ require './../Header/Head.php';
       </div>
   </main>
   <script src="./../calculator/modal.js"></script>
+  <script src='math.js'></script>
+  <script src='./../main/slider.js'></script>
 </body>

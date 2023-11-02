@@ -486,6 +486,9 @@ button.circle_empty {
 .material ul li{
   font-size: 22px;
 }
-.material span:first-child{
-  margin-left: 19px;
+
+.material_ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
