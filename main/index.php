@@ -25,9 +25,13 @@ require './../Header/Head.php';
                     </div>
                     <div class='choice'>
                         <form class='formcalc'>
-                            <h2 class='maintarg'>Площадь дома,<span id="demo"></span>м &#178;</h2>
+                            <h3 class='maintarg'>Длина <span id="demo"></span>м </h3>
                             <div class="slidecontainer">
-                                <input type="range" min="1" max="1000" value="50" class="slider" id="myRange">
+                                <input type="range" min="1" max="100" value="1" class="slider" id="myRange">
+                            </div>
+                            <h3 class='maintarg'>Ширина <span id="demotwo"></span>м </h3>
+                            <div class="slidecontainer">
+                                <input type="range" min="1" max="100" value="1" class="slider" id="myRangetwo">
                             </div>
                             <select class='select'>
                                 <option class='option' selected disabled>Количество этажей</option>

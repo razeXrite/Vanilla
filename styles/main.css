@@ -131,19 +131,20 @@ text-align: center;
 .maincalc{
     display: flex;
     justify-content: space-around;
-    margin-top: 10%;
+    margin-top: 5%;
     
 }
 .formcalc{
+    margin-top: -45px;
     width: 450px;
-    height: 84%;
+    height: 100%;
     border:2px solid #FF855D; 
     border-radius: 20px;
 }
 .home{
     position: static;
 }
- #myRange{
+ #myRange,#myRangetwo{
     width: 90%;
     text-align: center;
     margin-left: 22px;
@@ -288,7 +289,6 @@ a {
     
 }
 
-
 /* Чекбокс */
 
 .orange-checkbox-container {
@@ -322,7 +322,7 @@ a {
     
     
   } */
-  * When the checkbox is checked, add a orange background */
+  /* * When the checkbox is checked, add a orange background */ */
 .orange-checkbox-container input:checked ~ .checkmark {
   background-color: #FFB000;
 }
@@ -352,3 +352,4 @@ a {
   transform: rotate(45deg);
 }  
 
+/* Конец Чекбокса */
