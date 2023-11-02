@@ -2,11 +2,20 @@ const circles = document.querySelectorAll('.circle');
 let lastModalContent = 0;
 let lastButton = 0;
 
+
+var savedInput1Value = localStorage.getItem('length');
+var savedInput2Value = localStorage.getItem('width');
+
 circles.forEach(circle => {
     circle.addEventListener('click', openModal);
 });
 
 function openModal() {
+
+    // Используйте сохраненные данные по своему усмотрению
+    console.log(savedInput1Value);
+    console.log(savedInput2Value);     
+
     const modal = document.querySelector('.modal');
     const penopolist = document.querySelector('.penopolist');
     const penopolistBtn = document.getElementById('penopolist');

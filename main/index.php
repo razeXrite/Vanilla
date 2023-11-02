@@ -24,26 +24,27 @@ require './../Header/Head.php';
                         <img src='../assets/homemini.png' alt='Homemini' class='home'></img>
                     </div>
                     <div class='choice'>
-                        <form class='formcalc'>
+                        <form class='formcalc' id="formcalc">
                             <h3 class='maintarg'>Длина <span id="demo"></span>м </h3>
                             <div class="slidecontainer">
                                 <input type="range" min="1" max="100" value="1" class="slider" id="myRange">
                             </div>
-                            <h3 class='maintarg'>Ширина <span id="demotwo"></span>м </h3>
+                            <h3 class='maintarg'>Ширина <span id="demotwo"></span></h3>
                             <div class="slidecontainer">
                                 <input type="range" min="1" max="100" value="1" class="slider" id="myRangetwo">
                             </div>
                             <select class='select'>
                                 <option class='option' selected disabled>Количество этажей</option>
-                                <option class='option'>1</option>
-                                <option class='option'>2</option>
+                                    <option class='option'>1</option>
+                                    <option class='option'>2</option>
                             </select>
                             <div class="terace">
-                               <div><label class="orange-checkbox-container">Терасса
-                                <input type="checkbox" checked="checked">
-                                <span class="checkmark"></span></label>
-                            </div>
-                            <button class='continue'>Далее</button>
+                                <div>
+                                    <label class="orange-checkbox-container">Терасса
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span></label>
+                                </div>
+                                <button type="submit" class='continue'>Далее</button>
                         </form>
                     </div>
                 </div>
@@ -52,6 +53,7 @@ require './../Header/Head.php';
         </div>
     </main>
 
+    <script src="sendForm.js"></script>
     <script src="slider.js"></script>
     <script src="./../aboutUs/aboutUs.js"></script>
 </body>
