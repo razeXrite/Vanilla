@@ -487,7 +487,13 @@ button.circle_empty {
   margin-top: 55%;
 }
 
-.material h2 {
+.material{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 45%;
+}
+
+.material h2{
   font-size: 28px;
   margin-left: 20px;
 }
@@ -496,7 +502,14 @@ button.circle_empty {
   font-size: 22px;
 }
 
-.material_ul {
+.contConst{
+  margin-top: 16%;
+  list-style-type: none;
+  font-size: 22px;
+  text-align: right;
+  color: #53C541;
+}
+.material_ul{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
