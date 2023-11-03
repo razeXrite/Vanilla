@@ -140,13 +140,21 @@ require './../Header/Head.php';
             </div>
 
             <div class="material">
-              <h2>Материалы:</h2>
-              <ul>
-                <li>Фундамент теплового контура <span id="fundCost">0</span> руб.</li>
-                <li>Фундамент крыльца <span>12 938</span> руб.</li>
-                <li>Фундамент террасы <span>7 763</span> руб.</li>
-              </ul>
-            </div>
+                <div class="contName">
+                <h2>Материалы:</h2>
+                <ul>
+                  <li>Фундамент теплового контура</li>
+                  <li>Фундамент крыльца</li>
+                  <li>Фундамент террасы</li>
+                </ul>
+              </div>
+
+              <div class="contConst">
+                <li id="fundCost"></li>
+                <li>12 938</li>
+                <li>7 763</li> 
+              </div>
+        </div>
 
             <div class="price">
               <h3>200 000руб.</h3>
