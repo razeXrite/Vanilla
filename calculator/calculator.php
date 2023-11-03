@@ -6,100 +6,111 @@ require './../Header/Head.php';
 <body>
   <?php require './../Header/Header.php'; ?>
   <main>
-      <div class="container_home">
-        <div class="home">
-          <!-- {/* ЧАСТИ ДОМА */} -->
-          <div class="roof">
-            <img src="./pictures/roof.png" alt="roof" />
-          </div>
-          <div class="floor1">
-            <img src="./pictures/floor1.png" alt="floor1" />
-          </div>
-          <div class="foundation">
-            <img src="./pictures/foundation.png" alt="foundation" />
-          </div>
-          <!-- {/* ЛИНИИ ВЫБОРА */} -->
-          <div class="container_choice" id="attic">
-            <div class="circle"></div>
-            <div class="line"></div>
-            <div class="circle_empty"></div>
-          </div>
-          <div class="container_choice" id="window">
+    <div class="container_home">
+      <div class="home">
+        <!-- {/* ЧАСТИ ДОМА */} -->
+        <div class="roof">
+          <img src="./pictures/roof.png" alt="roof" />
+        </div>
+        <div class="floor1">
+          <img src="./pictures/floor1.png" alt="floor1" />
+        </div>
+        <div class="foundation">
+          <img src="./pictures/foundation.png" alt="foundation" />
+        </div>
+        <!-- {/* ЛИНИИ ВЫБОРА */} -->
+        <div class="container_choice" id="attic">
           <div class="circle"></div>
-            <div class="line"></div>
-            <div class="circle_empty"></div>
-          </div>
-          <div class="container_choice" id="wall">
+          <div class="line"></div>
+          <div class="circle_empty"></div>
+        </div>
+        <div class="container_choice" id="window">
           <div class="circle"></div>
-            <div class="line"></div>
-            <div class="circle_empty"></div>
-          </div>
-          <div class="container_choice" id="support">
+          <div class="line"></div>
+          <div class="circle_empty"></div>
+        </div>
+        <div class="container_choice" id="wall">
           <div class="circle"></div>
-            <div class="line"></div>
-            <div class="circle_empty"></div>
-          </div>
-          <div class="container_choice" id="foundation">
+          <div class="line"></div>
+          <div class="circle_empty"></div>
+        </div>
+        <div class="container_choice" id="support">
           <div class="circle"></div>
-            <div class="line"></div>
-            <div class="circle_empty"></div>
-          </div>
-          <div class="container_choice" id="chimney">
-            <div class="circle_empty"></div>
-            <div class="line"></div>
-            <div class="circle"></div>
-          </div>
-          <div class="container_choice" id="floor">
-            <div class="circle_empty"></div>
-            <div class="line"></div>
-            <div class="circle"></div>
-          </div>
-          <div class="container_choice" id="outerwall">
-            <div class="circle_empty"></div>
-            <div class="line"></div>
-            <div class="circle"></div>
-          </div>
+          <div class="line"></div>
+          <div class="circle_empty"></div>
+        </div>
+        <div class="container_choice" id="foundation">
+          <div class="circle"></div>
+          <div class="line"></div>
+          <div class="circle_empty"></div>
+        </div>
+        <div class="container_choice" id="chimney">
+          <div class="circle_empty"></div>
+          <div class="line"></div>
+          <div class="circle"></div>
+        </div>
+        <div class="container_choice" id="floor">
+          <div class="circle_empty"></div>
+          <div class="line"></div>
+          <div class="circle"></div>
+        </div>
+        <div class="container_choice" id="outerwall">
+          <div class="circle_empty"></div>
+          <div class="line"></div>
+          <div class="circle"></div>
         </div>
       </div>
-          <div class="itog-flex">
+    </div>
+    <div class="itog-flex">
       <div class="container">
-          <p class="totalPrice">Стоимость составляющих</p>
-          <p class="total-price">
-            <span class="number">0</span>
-            <span class="currency">руб</span>
-          </p>
+        <p class="totalPrice">Стоимость составляющих</p>
+        <p class="total-price">
+          <span class="number">0</span>
+          <span class="currency">руб</span>
+        </p>
 
-          <button class="button">Итоговая цена</button>
+        <button class="button">Итоговая цена</button>
+      </div>
+    </div>
+
+<!-- Модалка стен -->
+    <div class="modalWall">
+      <div class="modal_main">
+
+        <h1>Высота потолка(стен)</h1>
+        <button class='modal_btn' id="smallWall">2.5 метра</button>
+        <button class='modal_btn' id="bigWall">2.8 метра</button>
+
+        <div class="win2">
+          <div class="smallWall">
+            <h1 class="modalZag">Высота стены 2.5</h1>
+            <p class='modalDescr'>Экономичность: Помещение с потолком высотой 2.5 метра может быть более экономичным в плане использования материалов для отделки и отопления/охлаждения, так как объем помещения меньше.
+              <br> Уют и безопасность: Ниже потолок создает более уютную атмосферу и помогает уменьшить ветровые потоки, особенно в больших помещениях, обеспечивая ощущение комфорта и безопасности.<br />
+              вата - материал сделанный из натурального...
+            </p>
+            <div class="material">
+              <h2>Материалы:</h2>
+              <ul>
+                <li>СИП панели стен: <span id="#">0</span> руб.</li>
+              </ul>
+            </div>
+
+            <div class="price">
+              <h3>200 000руб.</h3>
+              <button class="modal_btn">Добавить</button>
+            </div>
+          </div>
         </div>
-        </div>
 
-      <div class='modal'>
-        <div class="modal_main">
-          <h1>Фундамент</h1>
-          <button class='modal_btn' id="mineral">Винтовые сваи</button>
-          <button class='modal_btn' id="penopolist">Железобетонные сваи</button>
-
-          <!-- Вторая модалка mineral -->
-          <div class="win2">
-            <div class='mineral'>
-              <h1 class="modalZag">Винтовые сваи</h1>
-              <p class='modalDescr'>Минеральная (базальовая или кварцевая) <br />
-                вата - материал сделанный из натурального...</p>
-              <div class="plusi">
-                <img src="img/list.png" />
-                <h3>компоненты</h3>
-              </div>
-              <div class="plusi">
-                <img src="img/fire.png" />
-                <h3>Негорючесть</h3>
-              </div>
-
+        <div class="win2">
+            <div class="bigWall">
+              <h1 class="modalZag">Высота стены 2.8</h1>
+              <p class='modalDescr'>Простор и свобода: Высокие потолки дают ощущение простора и свободы в помещении, делая его более величественным и впечатляющим.
+              <br> Комфорт в использовании: Помещение с потолком высотой 2.8 метров может быть более комфортным для проведения деятельности, требующей вертикального пространства, например, для подвешивания светильников или наличия высокой мебели.</p>
               <div class="material">
                 <h2>Материалы:</h2>
                 <ul>
-                  <li>Фундамент теплового контура <span id="fundCost">0</span> руб.</li>
-                  <li>Фундамент крыльца <span>12 938</span> руб.</li>
-                  <li>Фундамент террасы <span>7 763</span> руб.</li>
+                  <li>СИП панели стен: <span id="#">0</span> руб.</li>
                 </ul>
               </div>
 
@@ -110,33 +121,75 @@ require './../Header/Head.php';
             </div>
           </div>
 
-          <!-- Вторая модалка пенополист -->
-          <div class="win2">
-            <div class='penopolist'>
-              <p class='modalDescr'>Пенополист...<br />
-                пепнополист - материал сделанный из натурального...</p>
-              <div class="plusi">
-                <img src="img/list.png" />
-                <h3>компоненты</h3>
-              </div>
-              <div class="plusi">
-                <img src="img/fire.png" />
-                <h3>Негорючесть</h3>
-              </div>
-              <div class="plusi">
-                <img src="img/clock.png" />
-                <h3 class='clock_text'>Недолговечность</h3>
-              </div>
+      </div>
+    </div>
 
-              <div class="price">
-                <h3>200 000руб.</h3>
-                <button class="modal_btn">Добавить</button>
-              </div>
+
+<!-- Модалка фундамента -->
+    <div class='modalFoundation'>
+      <div class="modal_main">
+        <h1>Фундамент</h1>
+        <button class='modal_btn' id="mineral">Винтовые сваи</button>
+        <button class='modal_btn' id="penopolist">Железобетонные сваи</button>
+
+        <!-- Вторая модалка mineral -->
+        <div class="win2">
+          <div class='mineral'>
+            <h1 class="modalZag">Винтовые сваи</h1>
+            <p class='modalDescr'>Минеральная (базальовая или кварцевая) <br />
+              вата - материал сделанный из натурального...</p>
+            <div class="plusi">
+              <img src="img/list.png" />
+              <h3>компоненты</h3>
+            </div>
+            <div class="plusi">
+              <img src="img/fire.png" />
+              <h3>Негорючесть</h3>
+            </div>
+
+            <div class="material">
+              <h2>Материалы:</h2>
+              <ul>
+                <li>Фундамент теплового контура <span id="fundCost">0</span> руб.</li>
+                <li>Фундамент крыльца <span>12 938</span> руб.</li>
+                <li>Фундамент террасы <span>7 763</span> руб.</li>
+              </ul>
+            </div>
+
+            <div class="price">
+              <h3>200 000руб.</h3>
+              <button class="modal_btn">Добавить</button>
             </div>
           </div>
-
         </div>
+
+        <!-- Вторая модалка пенополист -->
+        <div class="win2">
+          <div class='penopolist'>
+            <p class='modalDescr'>Пенополист...<br />
+              пепнополист - материал сделанный из натурального...</p>
+            <div class="plusi">
+              <img src="img/list.png" />
+              <h3>компоненты</h3>
+            </div>
+            <div class="plusi">
+              <img src="img/fire.png" />
+              <h3>Негорючесть</h3>
+            </div>
+            <div class="plusi">
+              <img src="img/clock.png" />
+              <h3 class='clock_text'>Недолговечность</h3>
+            </div>
+
+            <div class="price">
+              <h3>200 000руб.</h3>
+              <button class="modal_btn">Добавить</button>
+            </div>
+          </div>
+        </div>
+
       </div>
+    </div>
   </main>
   <script src="./../calculator/modal.js"></script>
   <script src='math.js'></script>

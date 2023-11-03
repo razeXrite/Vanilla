@@ -265,7 +265,7 @@ html {
   z-index: 10;
 }
 
-  
+
 .container {
   display: flex;
   flex-direction: column;
@@ -287,9 +287,10 @@ html {
   font-size: 40px;
   color: #fff;
   margin-top: -25px;
-  
+
 }
-.number{
+
+.number {
   color: #FF855D;
 }
 
@@ -304,7 +305,7 @@ html {
   cursor: pointer;
 }
 
-.button:hover{
+.button:hover {
   background-color: #fd7e54;
 }
 
@@ -351,7 +352,8 @@ button.circle_empty {
 }
 
 
-.modal {
+.modalFoundation,
+.modalWall {
   position: fixed;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.5);
@@ -364,7 +366,8 @@ button.circle_empty {
   display: none;
 }
 
-.modal.active {
+.modalFoundation.active,
+.modalWall.active {
   display: flex;
 }
 
@@ -455,7 +458,10 @@ button.circle_empty {
 }
 
 /* Вторая модалка */
-.penopolist, .mineral {
+.penopolist,
+.mineral,
+.bigWall,
+.smallWall {
   position: fixed;
   display: none;
   top: 0;
@@ -467,27 +473,30 @@ button.circle_empty {
   z-index: 10;
 }
 
-.itog-flex{
+.itog-flex {
   display: flex;
   justify-content: center;
   margin-top: 3.5%;
 }
-.modalZag{
+
+.modalZag {
   padding-top: 30px;
 }
 
-.material{
+.material {
   margin-top: 55%;
 }
-.material h2{
+
+.material h2 {
   font-size: 28px;
   margin-left: 20px;
 }
-.material ul li{
+
+.material ul li {
   font-size: 22px;
 }
 
-.material_ul{
+.material_ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
