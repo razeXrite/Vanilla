@@ -496,12 +496,6 @@ button.circle_empty {
   text-align: right;
   color: #53C541;
 }
-.Const{
-  margin-top: 16%;
-  list-style-type: none;
-  font-size: 22px;
-  margin-left: -6%;
-}
 .material_ul{
   display: flex;
   justify-content: space-between;

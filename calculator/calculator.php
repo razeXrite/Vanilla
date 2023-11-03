@@ -109,12 +109,7 @@ require './../Header/Head.php';
                 <li>12 938</li>
                 <li>7 763</li> 
               </div>  
-              
-              <div class="Const">
-                <li>руб.</li>
-                <li>руб.</li>
-                <li>руб.</li> 
-              </div>
+            
         </div>
 
               <div class="price">
