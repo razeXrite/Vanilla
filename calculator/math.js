@@ -1,3 +1,4 @@
+
 let length = localStorage.getItem('length');
 let width = localStorage.getItem('width');
 const step = 2;
@@ -14,7 +15,7 @@ console.log(vintFundCost);
 var aboba = document.getElementById('fundCost');
 aboba.innerText = vintFundCost;
 
-let vintFullCost = vintFundCost + 12938 + 7763;
+let vintFullCost = vintFundCost + 12938 + 7763 + 10000;
 let ttlCost = document.getElementById('totalCost');
 ttlCost.innerText = vintFullCost + " руб.";
 
@@ -22,8 +23,10 @@ let fullHouseCost = 0;
 const vintPricePlusBtn = document.getElementById('vintPricePlus');
 vintPricePlusBtn.addEventListener('click', () => {
     fullHouseCost += vintFullCost;
-    console.log(fullHouseCost);
+    let fullHouseCostInr = document.getElementById('totalNumber');
+    fullHouseCostInr.innerText = fullHouseCost;
+    vintFullCost = 0;
 });
 
-let fullHouseCostInr = document.getElementById('totalNumber');
-fullHouseCostInr.innerText = fullHouseCost;
+
+

@@ -166,7 +166,7 @@ require './../Header/Head.php';
         <!-- Вторая модалка пенополист -->
         <div class="win2">
           <div class='penopolist mineral'>
-            <h1 class="modalZag">Винтовые сваи</h1>
+            <h1 class="modalZag">Железобетонные сваи</h1>
             <p class='modalDescr'>Минеральная (базальовая или кварцевая) <br />
               вата - материал сделанный из натурального...</p>
             <div class="plusi">
@@ -189,15 +189,15 @@ require './../Header/Head.php';
               </div>
 
               <div class="contConst">
-                <li id="fundCost"></li>
-                <li>12 938</li>
-                <li>7 763</li> 
+                <li id="jelezFundCost"></li>
+                <li>14 025</li>
+                <li>8 415</li> 
               </div>
         </div>
 
             <div class="price">
-              <h3 id="totalCost"></h3>
-              <button class="modal_btn">Добавить</button>
+              <h3 id="jelezTotalCost"></h3>
+              <button class="modal_btn" id="jelezPricePlus">Добавить</button>
             </div>
           </div>
         </div>
