@@ -158,7 +158,7 @@ require './../Header/Head.php';
 
             <div class="price">
               <h3 id="totalCost"></h3>
-              <button class="modal_btn">Добавить</button>
+              <button class="modal_btn" id="vintPricePlus">Добавить</button>
             </div>
           </div>
         </div>
@@ -166,8 +166,9 @@ require './../Header/Head.php';
         <!-- Вторая модалка пенополист -->
         <div class="win2">
           <div class='penopolist mineral'>
-            <p class='modalDescr'>Пенополист...<br />
-              пепнополист - материал сделанный из натурального...</p>
+            <h1 class="modalZag">Винтовые сваи</h1>
+            <p class='modalDescr'>Минеральная (базальовая или кварцевая) <br />
+              вата - материал сделанный из натурального...</p>
             <div class="plusi">
               <img src="img/list.png" />
               <h3>компоненты</h3>
@@ -176,13 +177,26 @@ require './../Header/Head.php';
               <img src="img/fire.png" />
               <h3>Негорючесть</h3>
             </div>
-            <div class="plusi">
-              <img src="img/clock.png" />
-              <h3 class='clock_text'>Недолговечность</h3>
-            </div>
+
+            <div class="material">
+                <div class="contName">
+                <h2>Материалы:</h2>
+                <ul>
+                  <li>Фундамент теплового контура</li>
+                  <li>Фундамент крыльца</li>
+                  <li>Фундамент террасы</li>
+                </ul>
+              </div>
+
+              <div class="contConst">
+                <li id="fundCost"></li>
+                <li>12 938</li>
+                <li>7 763</li> 
+              </div>
+        </div>
 
             <div class="price">
-              <h3>200 000руб.</h3>
+              <h3 id="totalCost"></h3>
               <button class="modal_btn">Добавить</button>
             </div>
           </div>

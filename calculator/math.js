@@ -19,8 +19,11 @@ let ttlCost = document.getElementById('totalCost');
 ttlCost.innerText = vintFullCost + " руб.";
 
 let fullHouseCost = 0;
-if(vintFullCost !== 0){
+const vintPricePlusBtn = document.getElementById('vintPricePlus');
+vintPricePlusBtn.addEventListener('click', () => {
     fullHouseCost += vintFullCost;
-}
+    console.log(fullHouseCost);
+});
+
 let fullHouseCostInr = document.getElementById('totalNumber');
 fullHouseCostInr.innerText = fullHouseCost;
