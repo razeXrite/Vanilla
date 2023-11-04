@@ -65,7 +65,7 @@ require './../Header/Head.php';
       <div class="container">
         <p class="totalPrice">Стоимость составляющих</p>
         <p class="total-price">
-          <span class="number">0</span>
+          <span id="totalNumber"></span>
           <span class="currency">руб</span>
         </p>
 
@@ -157,7 +157,7 @@ require './../Header/Head.php';
         </div>
 
             <div class="price">
-              <h3>200 000руб.</h3>
+              <h3 id="totalCost"></h3>
               <button class="modal_btn">Добавить</button>
             </div>
           </div>
@@ -165,7 +165,7 @@ require './../Header/Head.php';
 
         <!-- Вторая модалка пенополист -->
         <div class="win2">
-          <div class='penopolist'>
+          <div class='penopolist mineral'>
             <p class='modalDescr'>Пенополист...<br />
               пепнополист - материал сделанный из натурального...</p>
             <div class="plusi">

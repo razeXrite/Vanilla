@@ -13,4 +13,14 @@ const vintFundCost = kolSvai * (costSvai + costMontajka);
 console.log(vintFundCost);
 var aboba = document.getElementById('fundCost');
 aboba.innerText = vintFundCost;
-console.log(shir);
+
+let vintFullCost = vintFundCost + 12938 + 7763;
+let ttlCost = document.getElementById('totalCost');
+ttlCost.innerText = vintFullCost + " руб.";
+
+let fullHouseCost = 0;
+if(vintFullCost !== 0){
+    fullHouseCost += vintFullCost;
+}
+let fullHouseCostInr = document.getElementById('totalNumber');
+fullHouseCostInr.innerText = fullHouseCost;
