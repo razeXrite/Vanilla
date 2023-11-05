@@ -33,7 +33,7 @@ require './../Header/Head.php';
                             <div class="slidecontainer">
                                 <input type="range" min="1" max="100" value="1" class="slider" id="myRangetwo">
                             </div>
-                            <select class='select'>
+                            <select class='select' id="floors">
                                 <option class='option' selected disabled>Количество этажей</option>
                                     <option class='option'>1</option>
                                     <option class='option'>2</option>
@@ -41,7 +41,7 @@ require './../Header/Head.php';
                             <div class="terace">
                                 <div>
                                     <label class="orange-checkbox-container">Терасса
-                                        <input type="checkbox" checked="checked">
+                                        <input type="checkbox" checked="checked" id="terace">
                                         <span class="checkmark"></span></label>
                                 </div>
                                 <button type="submit" class='continue'>Далее</button>

@@ -11,7 +11,6 @@ Perimetr=2*(length+width);
 let kolSvai = (length/step+1)*(width/step+1);
 
 const vintFundCost = kolSvai * (costSvai + costMontajka);
-console.log(vintFundCost);
 var aboba = document.getElementById('fundCost');
 aboba.innerText = vintFundCost;
 

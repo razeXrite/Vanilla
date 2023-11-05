@@ -22,40 +22,40 @@ require './../Header/Head.php';
         <div class="container_choice" id="attic">
           <div class="circle"></div>
           <div class="line"></div>
-          <div class="circle_empty"></div>
+          <div class="Empty"></div>
         </div>
         <div class="container_choice" id="window">
           <div class="circle"></div>
           <div class="line"></div>
-          <div class="circle_empty"></div>
+          <div class="Empty"></div>
         </div>
         <div class="container_choice" id="wall">
           <div class="circle"></div>
           <div class="line"></div>
-          <div class="circle_empty"></div>
+          <div class="Empty"></div>
         </div>
         <div class="container_choice" id="support">
           <div class="circle"></div>
           <div class="line"></div>
-          <div class="circle_empty"></div>
+          <div class="Empty"></div>
         </div>
         <div class="container_choice" id="foundation">
           <div class="circle"></div>
           <div class="line"></div>
-          <div class="circle_empty"></div>
+          <div class="Empty"></div>
         </div>
         <div class="container_choice" id="chimney">
-          <div class="circle_empty"></div>
+          <div class="Empty"></div>
           <div class="line"></div>
           <div class="circle"></div>
         </div>
         <div class="container_choice" id="floor">
-          <div class="circle_empty"></div>
+          <div class="Empty"></div>
           <div class="line"></div>
           <div class="circle"></div>
         </div>
         <div class="container_choice" id="outerwall">
-          <div class="circle_empty"></div>
+          <div class="Empty"></div>
           <div class="line"></div>
           <div class="circle"></div>
         </div>

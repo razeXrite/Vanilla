@@ -49,15 +49,13 @@ html {
   z-index: 10;
 }
 
-.circle_empty {
+.Empty {
   width: 25px;
   height: 25px;
   border-radius: 50%;
   background-color: #36363E;
   border: 2px solid #FF855D;
   overflow: hidden;
-  cursor: pointer;
-
 }
 
 #window {
@@ -138,7 +136,7 @@ html {
   z-index: 10;
 }
 
-#attic .circle_empty {
+#attic .Empty {
   background-color: #FF855D;
   z-index: 10;
 }
@@ -154,7 +152,7 @@ html {
   z-index: 10;
 }
 
-#window .circle_empty {
+#window .Empty {
   background-color: #FF855D;
   z-index: 10;
 }
@@ -170,7 +168,7 @@ html {
   z-index: 10;
 }
 
-#support .circle_empty {
+#support .Empty {
   background-color: #FF855D;
   z-index: 10;
 }
@@ -186,7 +184,7 @@ html {
   z-index: 10;
 }
 
-#foundation .circle_empty {
+#foundation .Empty {
   background-color: #FF855D;
   z-index: 10;
 }
@@ -202,12 +200,12 @@ html {
   z-index: 10;
 }
 
-#wall .circle_empty {
+#wall .Empty {
   background-color: #FF855D;
   z-index: 10;
 }
 
-#chimney .circle_empty {
+#chimney .Empty {
   background-color: #FF855D;
   z-index: 10;
 }
@@ -233,7 +231,7 @@ html {
   z-index: 10;
 }
 
-#floor .circle_empty {
+#floor .Empty {
 
   background-color: #FF855D;
   z-index: 10;
@@ -259,7 +257,7 @@ html {
   z-index: 10;
 }
 
-#outerwall .circle_empty {
+#outerwall .Empty {
 
   background-color: #FF855D;
   z-index: 10;
@@ -312,7 +310,7 @@ html {
 
 
 
-button.circle_empty {
+button .Empty {
 
   cursor: pointer;
 
