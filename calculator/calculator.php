@@ -96,7 +96,7 @@ require './../Header/Head.php';
             </div>
 
             <div class="price">
-              <h3>200 000руб.</h3>
+              <h3 id="smallWallPrice"></h3>
               <button class="modal_btn" id="smallWallBtn">Добавить</button>
             </div>
           </div>
@@ -109,7 +109,7 @@ require './../Header/Head.php';
               <br> Комфорт в использовании: Помещение с потолком высотой 2.8 метров может быть более комфортным для проведения деятельности, требующей вертикального пространства, например, для подвешивания светильников или наличия высокой мебели.
             </p>
             <div class="price">
-              <h3>200 000руб.</h3>
+              <h3 id="bigWallPrice"></h3>
               <button class="modal_btn" id="bigWallBtn">Добавить</button>
             </div>
           </div>

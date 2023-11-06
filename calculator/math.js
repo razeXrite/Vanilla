@@ -1,5 +1,4 @@
-import { ironSvai } from "./ironSvai.js";
-import { vintSvai } from "./vintovieSvai.js";
+import { svai } from "./vintovieSvai.js";
 import { wallHeightPrice } from "./wallHeight.js";
 
 let length = localStorage.getItem('length');
@@ -11,14 +10,20 @@ let kolSvai = (length / step + 1) * (width / step + 1);
 
 
 
-let vintPrice = 0;
+// винтовая свая
+let svaiPrice = 0;
 const vintPricePlusBtn = document.getElementById('vintPricePlus');
 vintPricePlusBtn.addEventListener('click', () => {
-    vintPrice = vintSvai(kolSvai);
-    console.log(vintPrice);
+    svaiPrice = svai(vintPricePlusBtn.id, kolSvai);
     update();
 });
 
+// Железобетоная свая
+const jelezBtn = document.getElementById('jelezPricePlus');
+jelezBtn.addEventListener('click', () => {
+    svaiPrice = svai(jelezBtn.id, kolSvai);
+    update();
+});
 
 
 // wallHeight used
@@ -35,20 +40,10 @@ document.getElementById('bigWallBtn').addEventListener('click', () => {
     update();
 });
 
-// // Железобетон
-const jelezBtn = document.getElementById('jelezPricePlus');
-let ironPrice = 0;
-jelezBtn.addEventListener('click', () => {
-    ironPrice = ironSvai(kolSvai);
-    update();
-});
-
-
 // Обновляет изменения при клике на добавить)
 function update() {
-    console.log(ironPrice);
     let main = document.getElementById('totalNumber');
-    let RESULT = wallPrice + ironPrice + vintPrice; // ...
+    let RESULT = wallPrice + svaiPrice; // ...
     main.innerText = RESULT;
 }
 
@@ -56,5 +51,5 @@ function update() {
 // При переходе на калькулятор подругажет стоимость всех функций у модалок :)
 wallHeightPrice(length, width, 'bigWallBtn');
 wallHeightPrice(length, width, 'smallWallBtn');
-ironSvai(kolSvai);
-vintSvai(kolSvai)
+svai(jelezBtn.id, kolSvai);
+svai(vintPricePlusBtn.id, kolSvai);
