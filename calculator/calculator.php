@@ -146,13 +146,15 @@ require './../Header/Head.php';
                   <li>Фундамент теплового контура</li>
                   <li>Фундамент крыльца</li>
                   <li>Фундамент террасы</li>
+                  <li>Доставка фундамента</li> 
                 </ul>
               </div>
 
               <div class="contConst">
                 <li id="fundCost"></li>
                 <li>12 938</li>
-                <li>7 763</li> 
+                <li>7 763</li>
+                <li>10 000</li>  
               </div>
         </div>
 
@@ -185,13 +187,15 @@ require './../Header/Head.php';
                   <li>Фундамент теплового контура</li>
                   <li>Фундамент крыльца</li>
                   <li>Фундамент террасы</li>
+                  <li>Доставка фундамента</li>
                 </ul>
               </div>
 
               <div class="contConst">
                 <li id="jelezFundCost"></li>
                 <li>14 025</li>
-                <li>8 415</li> 
+                <li>8 415</li>
+                <li>15 000</li>
               </div>
         </div>
 

@@ -20,12 +20,33 @@ ttlCost.innerText = vintFullCost + " руб.";
 
 let fullHouseCost = 0;
 const vintPricePlusBtn = document.getElementById('vintPricePlus');
+
+let fullHouseCostInr = document.getElementById('totalNumber');
+
 vintPricePlusBtn.addEventListener('click', () => {
     fullHouseCost += vintFullCost;
-    let fullHouseCostInr = document.getElementById('totalNumber');
     fullHouseCostInr.innerText = fullHouseCost;
     vintFullCost = 0;
 });
 
 
+// Железобетон
 
+let jelezSv = 3190;
+let jelezMont = 2420;
+
+let jelezFirst = kolSvai * (jelezSv + jelezMont);
+var firstLi = document.getElementById('jelezFundCost');
+firstLi.innerText = jelezFirst;
+
+let fullJelez = jelezFirst + 14025 + 8415 + 15000;
+let ttlJelez = document.getElementById('jelezTotalCost');
+ttlJelez.innerText = fullJelez + " руб.";
+
+const jelezBtn = document.getElementById('jelezPricePlus');
+jelezBtn.addEventListener('click', () => {
+    fullHouseCost += fullJelez;
+    fullHouseCostInr.innerText = fullJelez;
+    vintFullCost = 0;
+    fullJelez = 0;
+});
