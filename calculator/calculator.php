@@ -125,10 +125,30 @@ require './../Header/Head.php';
         <div class="win2">
           <div class='flor'>
             <h1 class="krov">Кровля</h1>
+            <p class = 'modalDescr'>Кровля — верхний элемент покрытия здания, подвергающийся атмосферным воздействиям. Главной её функцией является защита внутренних помещений от атмосферных осадков и воздействий. </p>
+            <div class="material">
+              <div class="contName">
+                <h2>Материалы:</h2>
+                <ul>
+                  <li>Итоговая стоймость</li>
+             
+                
+                </ul>
+              </div>
+
+              <div class="contConst">
+                <li id="summ"></li>
+                
+              </div>
+            </div>
+            <div class="price">
+             
+              <button class="modal_btn" id="vintPricePlus">Добавить</button>
+            </div>
+        </div>
       </div>
-      </div>
-      </div>
-      </div>
+    </div>
+  </div>
         
        
     <!-- Модалка фундамента -->
