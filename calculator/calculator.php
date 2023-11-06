@@ -96,8 +96,8 @@ require './../Header/Head.php';
             </div>
 
             <div class="price">
-              <h3>200 000руб.</h3>
-              <button class="modal_btn">Добавить</button>
+              <h3 id="smallWallPrice"></h3>
+              <button class="modal_btn" id="smallWallBtn">Добавить</button>
             </div>
           </div>
         </div>
@@ -109,8 +109,8 @@ require './../Header/Head.php';
               <br> Комфорт в использовании: Помещение с потолком высотой 2.8 метров может быть более комфортным для проведения деятельности, требующей вертикального пространства, например, для подвешивания светильников или наличия высокой мебели.
             </p>
             <div class="price">
-              <h3>200 000руб.</h3>
-              <button class="modal_btn">Добавить</button>
+              <h3 id="bigWallPrice"></h3>
+              <button class="modal_btn" id="bigWallBtn">Добавить</button>
             </div>
           </div>
         </div>
@@ -154,13 +154,13 @@ require './../Header/Head.php';
             </div>
 
             <div class="material">
-                <div class="contName">
+              <div class="contName">
                 <h2>Материалы:</h2>
                 <ul>
                   <li>Фундамент теплового контура</li>
                   <li>Фундамент крыльца</li>
                   <li>Фундамент террасы</li>
-                  <li>Доставка фундамента</li> 
+                  <li>Доставка фундамента</li>
                 </ul>
               </div>
 
@@ -168,9 +168,9 @@ require './../Header/Head.php';
                 <li id="fundCost"></li>
                 <li>12 938</li>
                 <li>7 763</li>
-                <li>10 000</li>  
+                <li>10 000</li>
               </div>
-        </div>
+            </div>
 
             <div class="price">
               <h3 id="totalCost"></h3>
@@ -195,7 +195,7 @@ require './../Header/Head.php';
             </div>
 
             <div class="material">
-                <div class="contName">
+              <div class="contName">
                 <h2>Материалы:</h2>
                 <ul>
                   <li>Фундамент теплового контура</li>
@@ -211,7 +211,7 @@ require './../Header/Head.php';
                 <li>8 415</li>
                 <li>15 000</li>
               </div>
-        </div>
+            </div>
 
             <div class="price">
               <h3 id="jelezTotalCost"></h3>
@@ -223,7 +223,7 @@ require './../Header/Head.php';
       </div>
     </div>
   </main>
+  <script type="module" src='math.js'></script>
   <script src="./../calculator/modal.js"></script>
-  <script src='math.js'></script>
   <script src='./../main/slider.js'></script>
 </body>
