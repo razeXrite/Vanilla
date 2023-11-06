@@ -53,3 +53,26 @@ wallHeightPrice(length, width, 'bigWallBtn');
 wallHeightPrice(length, width, 'smallWallBtn');
 svai(jelezBtn.id, kolSvai);
 svai(vintPricePlusBtn.id, kolSvai);
+
+// Обвязка
+// обвязка вертикальная
+
+let lenghtVertDsk = (length / step+1) * width*3;
+console.log(lenghtVertDsk)
+
+let lenghtGorizDsk = length * 2 * 3;
+console.log(lenghtGorizDsk);
+
+let obiemVert = +(lenghtVertDsk * 0.2 * 0.05);
+console.log(obiemVert);
+
+let obiemGoriz = +(lenghtGorizDsk * 0.2 * 0.05);
+console.log(obiemGoriz);
+
+let obiemPilomat = obiemVert + obiemGoriz;
+obiemPilomat += (obiemPilomat * 0.15);
+obiemPilomat = +obiemPilomat;
+console.log(obiemPilomat);
+
+let resultObvazkaFund = Math.round(obiemPilomat * 24725);
+console.log(resultObvazkaFund);
