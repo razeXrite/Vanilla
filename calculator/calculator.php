@@ -117,6 +117,20 @@ require './../Header/Head.php';
       </div>
     </div>
 
+    <!-- МОДАЛКА КРЫШИ -->
+    <div class='modalFloor'>
+      <div class="modal_main">
+        <h1>Крыша</h1>
+        <button class='modal_btn' id="flor">Кровля</button>
+        <div class="win2">
+          <div class='flor'>
+            <h1 class="krov">Кровля</h1>
+      </div>
+      </div>
+      </div>
+      </div>
+        
+       
     <!-- Модалка фундамента -->
     <div class='modalFoundation'>
       <div class="modal_main">

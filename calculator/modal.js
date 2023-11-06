@@ -127,6 +127,45 @@ function openModal(e) {
             }
         }
     }
+    // МОДАЛКА КРЫШИ
+    if (parentId === 'floor') {
+        const floorModal = document.querySelector('.modalFloor');
+        const flor = document.querySelector('.flor');
+        const florBtn = document.getElementById('flor');
+      
+        florBtn.addEventListener('click', () => {
+          openModalContent('flor', florBtn);
+        });
+      
+        floorModal.addEventListener('click', closeModal);
+      
+        floorModal.style.display = 'block';
+      
+        function openModalContent(content, btn) {
+          if (lastModalContent) {
+            lastModalContent.style.display = 'none';
+          }
+          if (lastButton) {
+            lastButton.classList.remove('active');
+          }
+      
+          if (content === 'flor') {
+            flor.style.display = 'block';
+            lastModalContent = flor;
+          }
+      
+          btn.classList.add('active');
+          lastButton = btn;
+        }
+      
+        function closeModal(event) {
+          const clickedElement = event.target;
+          if (clickedElement.classList.contains('modalFloor')) {
+            floorModal.style.display = 'none';
+            flor.style.display = 'none';
+          }
+        }
+      }
 
 }
 

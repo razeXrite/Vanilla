@@ -349,7 +349,7 @@ button .Empty {
   font-size: 36px;
 }
 
-
+.modalFloor,
 .modalFoundation,
 .modalWall {
   position: fixed;
@@ -363,7 +363,7 @@ button .Empty {
   visibility: auto;
   display: none;
 }
-
+.modalFloor.active,
 .modalFoundation.active,
 .modalWall.active {
   display: flex;
@@ -456,6 +456,7 @@ button .Empty {
 }
 
 /* Вторая модалка */
+.flor,
 .penopolist,
 .mineral,
 .bigWall,
