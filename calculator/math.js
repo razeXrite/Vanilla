@@ -1,52 +1,60 @@
+import { ironSvai } from "./ironSvai.js";
+import { vintSvai } from "./vintovieSvai.js";
+import { wallHeightPrice } from "./wallHeight.js";
 
 let length = localStorage.getItem('length');
 let width = localStorage.getItem('width');
 const step = 2;
-let costSvai = 2875;
-let costMontajka = 2300;
 let Perimetr = 0;
+Perimetr = 2 * (length + width);
+let kolSvai = (length / step + 1) * (width / step + 1);
 
-Perimetr=2*(length+width);
 
-let kolSvai = (length/step+1)*(width/step+1);
 
-const vintFundCost = kolSvai * (costSvai + costMontajka);
-var aboba = document.getElementById('fundCost');
-aboba.innerText = vintFundCost;
-
-let vintFullCost = vintFundCost + 12938 + 7763 + 10000;
-let ttlCost = document.getElementById('totalCost');
-ttlCost.innerText = vintFullCost + " руб.";
-
-let fullHouseCost = 0;
+let vintPrice = 0;
 const vintPricePlusBtn = document.getElementById('vintPricePlus');
-
-let fullHouseCostInr = document.getElementById('totalNumber');
-
 vintPricePlusBtn.addEventListener('click', () => {
-    fullHouseCost += vintFullCost;
-    fullHouseCostInr.innerText = fullHouseCost;
-    vintFullCost = 0;
+    vintPrice = vintSvai(kolSvai);
+    console.log(vintPrice);
+    update();
 });
 
 
-// Железобетон
 
-let jelezSv = 3190;
-let jelezMont = 2420;
+// wallHeight used
+let wallPrice = 0;
+// при клике на стену 2.5 метра
+document.getElementById('smallWallBtn').addEventListener('click', () => {
+    wallPrice = wallHeightPrice(length, width, 'smallWallBtn');
+    update();
+})
 
-let jelezFirst = kolSvai * (jelezSv + jelezMont);
-var firstLi = document.getElementById('jelezFundCost');
-firstLi.innerText = jelezFirst;
+// при клике на стену 2.8 метра
+document.getElementById('bigWallBtn').addEventListener('click', () => {
+    wallPrice = wallHeightPrice(length, width, 'bigWallBtn');
+    update();
+});
 
-let fullJelez = jelezFirst + 14025 + 8415 + 15000;
-let ttlJelez = document.getElementById('jelezTotalCost');
-ttlJelez.innerText = fullJelez + " руб.";
-
+// // Железобетон
 const jelezBtn = document.getElementById('jelezPricePlus');
+let ironPrice = 0;
 jelezBtn.addEventListener('click', () => {
-    fullHouseCost += fullJelez;
-    fullHouseCostInr.innerText = fullJelez;
-    vintFullCost = 0;
-    fullJelez = 0;
+    ironPrice = ironSvai(kolSvai);
+    update();
 });
+
+
+// Обновляет изменения при клике на добавить)
+function update() {
+    console.log(ironPrice);
+    let main = document.getElementById('totalNumber');
+    let RESULT = wallPrice + ironPrice + vintPrice; // ...
+    main.innerText = RESULT;
+}
+
+
+// При переходе на калькулятор подругажет стоимость всех функций у модалок :)
+wallHeightPrice(length, width, 'bigWallBtn');
+wallHeightPrice(length, width, 'smallWallBtn');
+ironSvai(kolSvai);
+vintSvai(kolSvai)
