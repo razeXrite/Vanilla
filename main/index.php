@@ -56,6 +56,7 @@ require './../Header/Head.php';
     <script src="sendForm.js"></script>
     <script src="slider.js"></script>
     <script src="./../aboutUs/aboutUs.js"></script>
+    <script src="conditionZero.js"></script>
 </body>
 
 </html>
