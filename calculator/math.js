@@ -1,8 +1,8 @@
 import { svai } from "./vintovieSvai.js";
 import { wallHeightPrice } from "./wallHeight.js";
 
-let length = localStorage.getItem('length');
-let width = localStorage.getItem('width');
+let length =Number(localStorage.getItem('length'));
+let width =Number(localStorage.getItem('width'));
 const step = 2;
 let Perimetr = 0;
 Perimetr = 2 * (length + width);
@@ -80,8 +80,7 @@ console.log(resultObvazkaFund);
 // крыша
 
 // Объём пиламатериала на основной мауэрлат
-let volumFlor = (10 + 7)* 2 * 0.15 * 0.05;
-
+let volumFlor = (length + width)* 2 * 0.15 * 0.05;
 
 // Объём пиламатериала на промежуточный мауэрлат и опоры под стропилами
 let volumPil = (length * 2) * (0.15 * (0.05 * 2));
@@ -168,7 +167,8 @@ let Pilomat = volueKrov * 24725;
 
 
 // Количество металлочерепицы ОШИБКА В СМЕТЕ
-let cherepica = (length + 0,5)*lengthKrov*2;
+let cherepica = (length + 0.5)*lengthKrov*2;
+
 
 // Стоимость кровли из металлочерепицы
 
