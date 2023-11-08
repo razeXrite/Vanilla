@@ -127,19 +127,22 @@ require './../Header/Head.php';
             <h1 class="krov">Кровля</h1>
             <p class = 'modalDescr'>Кровля — верхний элемент покрытия здания, подвергающийся атмосферным воздействиям. Главной её функцией является защита внутренних помещений от атмосферных осадков и воздействий. </p>
             <div class="material">
-              <div class="contName">
+              <div class="contNames">
                 <h2>Материалы:</h2>
                 <ul>
-                  <li>Итоговая стоймость</li>               
+                  <li>Пиломатериал под кровлю</li>
+                  <li>Стоимость кровли из металлочерепицы</li>
+
                 </ul>
               </div>
 
-              <div class="contConst">
-                <li id="summ"></li>
+              <div class="contConsts">
+                <li id="pil"></li>
+                <li id="metalCherepica"></li>
               </div>
             </div>
-            <div class="price">
-              <h3 class="totalPriceRoof"></h3>
+            <div class="prices">
+              <h3 class="summ"></h3>
               <button class="modal_btn" id="roofPrice">Добавить</button>
             </div>
         </div>
