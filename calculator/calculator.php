@@ -130,6 +130,7 @@ require './../Header/Head.php';
               <div class="contNames">
                 <h2>Материалы:</h2>
                 <ul>
+
                   <li>Пиломатериал под кровлю</li>
                   <li>Стоимость кровли из металлочерепицы</li>
 
@@ -144,6 +145,9 @@ require './../Header/Head.php';
             <div class="prices">
               <h3 class="summ"></h3>
               <button class="modal_btn" id="roofPrice">Добавить</button>
+
+              
+
             </div>
         </div>
       </div>
@@ -242,6 +246,105 @@ require './../Header/Head.php';
 
       </div>
     </div>
+
+
+
+
+
+
+        <!-- обвязка -->
+
+    <div class='modalStraping'>
+      <div class="modal_main">
+        <h1>Фундамент</h1>
+        <button class='modal_btn' id="vertObv">Винтовые сваи</button>
+        <button class='modal_btn' id="gorizObv">Железобетонные сваи</button>
+
+        <!-- Вторая модалка mineral -->
+        <div class="win2">
+          <div class='frstObv'>
+            <h1 class="modalZag">Винтовые сваи</h1>
+            <p class='modalDescr'>Минеральная (базальовая или кварцевая) <br />
+              вата - материал сделанный из натурального...</p>
+            <div class="plusi">
+              <img src="img/list.png" />
+              <h3>компоненты</h3>
+            </div>
+            <div class="plusi">
+              <img src="img/fire.png" />
+              <h3>Негорючесть</h3>
+            </div>
+
+            <div class="material">
+              <div class="contName">
+                <h2>Материалы:</h2>
+                <ul>
+                  <li>Фундамент теплового контура</li>
+                  <li>Фундамент крыльца</li>
+                  <li>Фундамент террасы</li>
+                  <li>Доставка фундамента</li>
+                </ul>
+              </div>
+
+              <div class="contConst">
+                <li id="fundCost"></li>
+                <li>12 938</li>
+                <li>7 763</li>
+                <li>10 000</li>
+              </div>
+            </div>
+
+            <div class="price">
+              <h3 id="totalCost"></h3>
+              <button class="modal_btn" id="vintPricePlus">Добавить</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Вторая модалка пенополист -->
+        <div class="win2">
+          <div class='scndObv'>
+            <h1 class="modalZag">Железобетонные сваи</h1>
+            <p class='modalDescr'>Минеральная (базальовая или кварцевая) <br />
+              вата - материал сделанный из натурального...</p>
+            <div class="plusi">
+              <img src="img/list.png" />
+              <h3>компоненты</h3>
+            </div>
+            <div class="plusi">
+              <img src="img/fire.png" />
+              <h3>Негорючесть</h3>
+            </div>
+
+            <div class="material">
+              <div class="contName">
+                <h2>Материалы:</h2>
+                <ul>
+                  <li>Фундамент теплового контура</li>
+                  <li>Фундамент крыльца</li>
+                  <li>Фундамент террасы</li>
+                  <li>Доставка фундамента</li>
+                </ul>
+              </div>
+
+              <div class="contConst">
+                <li id="jelezFundCost"></li>
+                <li>14 025</li>
+                <li>8 415</li>
+                <li>15 000</li>
+              </div>
+            </div>
+
+            <div class="price">
+              <h3 id="jelezTotalCost"></h3>
+              <button class="modal_btn" id="jelezPricePlus">Добавить</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
   </main>
   <script type="module" src='math.js'></script>
   <script src="./../calculator/modal.js"></script>

@@ -5,7 +5,7 @@ import { wallHeightPrice } from "./wallHeight.js";
 
 let length = Number(localStorage.getItem('length'));
 let width = Number(localStorage.getItem('width'));
-const step = 2;  
+const step = 2;
 let kolSvai = (length / step + 1) * (width / step + 1);
 
 
@@ -13,16 +13,16 @@ let kolSvai = (length / step + 1) * (width / step + 1);
 // винтовая свая
 let svaiPrice = 0;
 const vintPricePlusBtn = document.getElementById('vintPricePlus');
-vintPricePlusBtn.addEventListener('click', () => {
+vintPricePlusBtn.addEventListener('click', (e) => {
     svaiPrice = svai(vintPricePlusBtn.id, kolSvai);
-    update();
+    update(e);
 });
 
 // Железобетоная свая
 const jelezBtn = document.getElementById('jelezPricePlus');
-jelezBtn.addEventListener('click', () => {
+jelezBtn.addEventListener('click', (e) => {
     svaiPrice = svai(jelezBtn.id, kolSvai);
-    update();
+    update(e);
 });
 
 
@@ -54,7 +54,7 @@ document.getElementById('#').addEventListener('click', () => {
 });
 
 // Обновляет изменения при клике на добавить)
-function update() {
+function update(e) {
     let main = document.getElementById('totalNumber');
     let RESULT = wallPrice + svaiPrice + roofPrice; // ...
     main.innerText = RESULT;
