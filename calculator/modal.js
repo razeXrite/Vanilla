@@ -167,5 +167,68 @@ function openModal(e) {
         }
       }
 
-}
+    //   modalka obvazki
 
+      if (parentId === 'support') {
+        const strappingModal = document.querySelector('.modalStraping');
+        const gorizlist = document.querySelector('.frstObv');
+        const gorizBtn = document.getElementById('gorizObv');
+        const vertical = document.querySelector('.scndObv');
+        const verticalBtn = document.getElementById('vertObv');
+        console.log(strappingModal);
+        console.log(gorizlist);
+        console.log(gorizBtn);
+        console.log(vertical);
+        console.log(verticalBtn);
+        gorizBtn.addEventListener('click', () => {
+            openModalContent('gorizObv', gorizBtn);
+        });
+
+        verticalBtn.addEventListener('click', () => {
+            openModalContent('vertObv', verticalBtn);
+        });
+
+        strappingModal.addEventListener('click', closeModal);
+
+        strappingModal.style.display = 'block';
+
+        // Открытие модалки с контентом (справа которая)
+        function openModalContent(content, btn) {
+            if (lastModalContent) {
+                lastModalContent.style.display = 'none';
+            }
+            if (lastButton) {
+                lastButton.classList.remove('active');
+            }
+
+            if (content === 'frstObv') {
+                gorizlist.style.display = 'none';
+                vertical.style.display = 'block';
+                lastModalContent = vertical;
+            } else if (content === 'scndObv') {
+                vertical.style.display = 'none';
+                gorizlist.style.display = 'block';
+                lastModalContent = gorizlist;
+            }
+
+            btn.classList.add('active');
+            lastButton = btn;
+        }
+
+        // Закрытие обоих модалок
+        function closeModal(e) {
+            if (e.target === strappingModal) {
+                strappingModal.style.display = 'none';
+                if (lastModalContent) {
+                    lastModalContent.style.display = 'none';
+                    lastModalContent = 0;
+                }
+                if (lastButton) {
+                    lastButton.classList.remove('active');
+                    lastButton = 0;
+                }
+            }
+        }
+
+}
+}
