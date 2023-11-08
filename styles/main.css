@@ -4,6 +4,7 @@ body{
     margin: 0;
     background-color: #39363E;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 header {
@@ -41,7 +42,7 @@ header {
     background-color: #39363E;
     border: 2px solid #FF855D ;
     color:white;
-    width: 5%;
+    width: 10%;
     
 }
 
@@ -401,6 +402,12 @@ a {
         margin: 0;
         margin-top: 0 !important;
     }
+
+    .choice{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+    }
     .title{
         margin-bottom:8%;
     }
@@ -415,4 +422,31 @@ a {
         height: 36px;
 
     }
+}
+@media(max-width:800px){
+.formcalc{
+    max-width: 100%;
+}
+.header__inner img{
+    margin: 0;
+}
+.title{
+    margin-bottom: 16%;
+}
+.text{
+    margin-bottom: 10%;
+}
+.heading{
+    padding-top: 32%;
+}
+.inputsBlock input{
+    display: flex;
+    width: 80%;
+}
+.aboutBlock form {
+    display: none;
+}
+.continue,#floors{
+    font-size: 21px;
+}
 }
