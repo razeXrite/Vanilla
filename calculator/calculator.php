@@ -130,20 +130,17 @@ require './../Header/Head.php';
               <div class="contName">
                 <h2>Материалы:</h2>
                 <ul>
-                  <li>Итоговая стоймость</li>
-             
-                
+                  <li>Итоговая стоймость</li>               
                 </ul>
               </div>
 
               <div class="contConst">
                 <li id="summ"></li>
-                
               </div>
             </div>
             <div class="price">
-             
-              <button class="modal_btn" id="vintPricePlus">Добавить</button>
+              <h3 class="totalPriceRoof"></h3>
+              <button class="modal_btn" id="roofPrice">Добавить</button>
             </div>
         </div>
       </div>
