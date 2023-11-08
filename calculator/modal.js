@@ -127,59 +127,55 @@ function openModal(e) {
             }
         }
     }
+
     // МОДАЛКА КРЫШИ
     if (parentId === 'floor') {
         const floorModal = document.querySelector('.modalFloor');
         const flor = document.querySelector('.flor');
         const florBtn = document.getElementById('flor');
-      
+
         florBtn.addEventListener('click', () => {
-          openModalContent('flor', florBtn);
+            openModalContent('flor', florBtn);
         });
-      
+
         floorModal.addEventListener('click', closeModal);
-      
+
         floorModal.style.display = 'block';
-      
+
         function openModalContent(content, btn) {
-          if (lastModalContent) {
-            lastModalContent.style.display = 'none';
-          }
-          if (lastButton) {
-            lastButton.classList.remove('active');
-          }
-      
-          if (content === 'flor') {
-            flor.style.display = 'block';
-            lastModalContent = flor;
-          }
-      
-          btn.classList.add('active');
-          lastButton = btn;
+            if (lastModalContent) {
+                lastModalContent.style.display = 'none';
+            }
+            if (lastButton) {
+                lastButton.classList.remove('active');
+            }
+
+            if (content === 'flor') {
+                flor.style.display = 'block';
+                lastModalContent = flor;
+            }
+
+            btn.classList.add('active');
+            lastButton = btn;
         }
-      
+
         function closeModal(event) {
-          const clickedElement = event.target;
-          if (clickedElement.classList.contains('modalFloor')) {
-            floorModal.style.display = 'none';
-            flor.style.display = 'none';
-          }
+            const clickedElement = event.target;
+            if (clickedElement.classList.contains('modalFloor')) {
+                floorModal.style.display = 'none';
+                flor.style.display = 'none';
+            }
         }
-      }
+    }
 
     //   modalka obvazki
-
-      if (parentId === 'support') {
+    if (parentId === 'support') {
         const strappingModal = document.querySelector('.modalStraping');
         const gorizlist = document.querySelector('.frstObv');
         const gorizBtn = document.getElementById('gorizObv');
         const vertical = document.querySelector('.scndObv');
         const verticalBtn = document.getElementById('vertObv');
-        console.log(strappingModal);
-        console.log(gorizlist);
-        console.log(gorizBtn);
-        console.log(vertical);
-        console.log(verticalBtn);
+
         gorizBtn.addEventListener('click', () => {
             openModalContent('gorizObv', gorizBtn);
         });
@@ -201,11 +197,11 @@ function openModal(e) {
                 lastButton.classList.remove('active');
             }
 
-            if (content === 'frstObv') {
+            if (content === 'vertObv') {
                 gorizlist.style.display = 'none';
                 vertical.style.display = 'block';
                 lastModalContent = vertical;
-            } else if (content === 'scndObv') {
+            } else if (content === 'gorizObv') {
                 vertical.style.display = 'none';
                 gorizlist.style.display = 'block';
                 lastModalContent = gorizlist;
@@ -230,5 +226,5 @@ function openModal(e) {
             }
         }
 
-}
+    }
 }
