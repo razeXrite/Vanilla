@@ -35,15 +35,16 @@ require './../Header/Head.php';
                             </div>
                             <select class='select' id="floors">
                                 <option class='option' selected disabled>Количество этажей</option>
-                                    <option class='option'>1</option>
-                                    <option class='option'>2</option>
+                                <option class='option'>1</option>
+                                <option class='option'>2</option>
                             </select>
                             <button type="submit" class='continue'>Далее</button>
                         </form>
+                    </div>
                 </div>
             </div>
             <?php require './../aboutUs/aboutUs.php' ?>
-        </div>
+
     </main>
 
     <script src="sendForm.js"></script>
