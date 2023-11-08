@@ -37,7 +37,13 @@ header {
     align-items: center;
     
 }
-
+#demo,#demotwo{
+    background-color: #39363E;
+    border: 2px solid #FF855D ;
+    color:white;
+    width: 5%;
+    
+}
 
 .header__text a {
     margin-right: 13%;
@@ -75,9 +81,13 @@ color: white;
 background-color: #f96b3b;
 }
 
+main div{
+    min-width: auto;
+}
+
 .picture{
-    width: 100%;
-    height: 800px;
+    min-width: 100%;
+    min-height: 800px;
     background: url(../assets/picture.png);
     background-repeat: no-repeat;
 }
@@ -255,7 +265,7 @@ a {
 .continue{
     border: 2px solid #FF855D;
     border-radius: 20px;
-    
+    margin-top: 30px;
     margin-left: 106px;
     width: 50%;
     height: 30px;
@@ -353,3 +363,56 @@ a {
 }  
 
 /* Конец Чекбокса */
+
+
+@media (max-width:1200px) {
+    .home_container{
+        display: none;
+    }
+    .aboutBlock{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .contact-block{
+        text-align: center;
+    }
+    .aboutBlock h3{
+        text-align: center;
+    }
+    .img-block{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 44px;
+    }
+    .picture{
+        min-height: 748px;
+    }
+    .maincalc{
+        height: 353px;
+    }
+    .formcalc{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .formcalc .maintarg{
+        margin: 0;
+        margin-top: 0 !important;
+    }
+    .title{
+        margin-bottom:8%;
+    }
+    .maintarg,#demo,#demotwo,#floors,.continue{
+    font-size: 27px;
+
+    }
+    #demo,#demotwo{
+        width:10%;
+    }
+    .select{
+        height: 36px;
+
+    }
+}

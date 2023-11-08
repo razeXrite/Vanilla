@@ -1,12 +1,18 @@
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
-output.innerHTML = slider.value;
+output.value = slider.value;
 slider.oninput = function () {
-    output.innerHTML = this.value;
+    output.value = this.value;
+}
+output.oninput = function () {
+    slider.value = this.value;
 }
 var slidertwo = document.getElementById("myRangetwo");
 var outputtwo = document.getElementById("demotwo");
-outputtwo.innerHTML = slidertwo.value;
+outputtwo.value = slidertwo.value;
 slidertwo.oninput = function () {
-    outputtwo.innerHTML = this.value;
+    outputtwo.value = this.value;
+}
+outputtwo.oninput = function () {
+    slidertwo.value = this.value;
 }
