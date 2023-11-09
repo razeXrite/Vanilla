@@ -6,7 +6,7 @@ require './../Header/Head.php';
 <body>
     <?php
     require './../Header/Header.php';
-    require 'test.php';
+    // require 'test.php';
     ?>
 
     <main>
