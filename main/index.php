@@ -6,6 +6,7 @@ require './../Header/Head.php';
 <body>
     <?php
     require './../Header/Header.php';
+    require 'test.php';
     ?>
 
     <main>
@@ -50,6 +51,7 @@ require './../Header/Head.php';
     <script src="slider.js"></script>
     <script src="./../aboutUs/aboutUs.js"></script>
     <script src="conditionZero.js"></script>
+    <script src="test.js"></script>
 </body>
 
 </html>

@@ -252,24 +252,16 @@ require './../Header/Head.php';
 
     <div class='modalStraping'>
       <div class="modal_main">
-        <h1>Фундамент</h1>
-        <button class='modal_btn' id="vertObv">Винтовые сваи</button>
-        <button class='modal_btn' id="gorizObv">Железобетонные сваи</button>
+        <h1>Обвязка теплового контура</h1>
+        <button class='modal_btn' id="vertObv">Вертикальная обвязка</button>
+        <button class='modal_btn' id="gorizObv">Горизонтальная обвязка</button>
 
         <!-- Вторая модалка mineral -->
         <div class="win2">
           <div class='frstObv'>
-            <h1 class="modalZag">Винтовые сваи</h1>
+            <h1 class="modalZag">Горизонтальная обвязка</h1>
             <p class='modalDescr'>Минеральная (базальовая или кварцевая) <br />
               вата - материал сделанный из натурального...</p>
-            <div class="plusi">
-              <img src="img/list.png" />
-              <h3>компоненты</h3>
-            </div>
-            <div class="plusi">
-              <img src="img/fire.png" />
-              <h3>Негорючесть</h3>
-            </div>
 
             <div class="material">
               <div class="contName">
@@ -300,17 +292,10 @@ require './../Header/Head.php';
         <!-- Вторая модалка пенополист -->
         <div class="win2">
           <div class='scndObv'>
-            <h1 class="modalZag">Железобетонные сваи</h1>
+            <h1 class="modalZag">Вертикальная обвязка</h1>
             <p class='modalDescr'>Минеральная (базальовая или кварцевая) <br />
               вата - материал сделанный из натурального...</p>
-            <div class="plusi">
-              <img src="img/list.png" />
-              <h3>компоненты</h3>
-            </div>
-            <div class="plusi">
-              <img src="img/fire.png" />
-              <h3>Негорючесть</h3>
-            </div>
+            
 
             <div class="material">
               <div class="contName">

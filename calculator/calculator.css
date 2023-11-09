@@ -9,11 +9,13 @@ html {
   display: flex;
   justify-content: center;
   margin-left: -3%;
+  height:80%;
 }
 
 .home {
   margin-top: -7%;
   position: absolute;
+  height: 80%;
 }
 
 .roof {
