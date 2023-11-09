@@ -13,7 +13,7 @@ html {
 }
 
 .home {
-  margin-top: -7%;
+  margin-top: -12%;
   position: absolute;
   height: 80%;
 }
@@ -273,7 +273,7 @@ html {
   padding: 20px;
   border: 2px solid #FF855D;
   border-radius: 8px;
-  margin-top: 39%;
+  margin-top: 35%;
   width: 30%;
 }
 
@@ -458,6 +458,28 @@ button .Empty {
 .price button {
   margin: 0;
 }
+.contName{
+  margin-top: -25%;
+}
+
+.prices {
+  border: 3px solid #FF855D;
+  border-radius: 20px;
+  width: 400px;
+  margin-left: 42px;
+  text-align: center;
+  height: 180px;
+  margin-top: 5%;
+}
+
+.prices h3 {
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+.prices button {
+  margin: 0;
+}
 
 /* Вторая модалка */
 .flor,
@@ -505,9 +527,15 @@ button .Empty {
 .material ul li {
   font-size: 22px;
 }
-
-.contConst{
+.contConsts{
   margin-top: 16%;
+  list-style-type: none;
+  font-size: 22px;
+  text-align: right;
+  color: #53C541;
+}
+.contConst{
+  margin-top: -9%;
   list-style-type: none;
   font-size: 22px;
   text-align: right;

@@ -54,18 +54,17 @@ export function roof(length, width) {
     let volueKrov = (volumFlor + volumPil + stoyka + volumStrop + volumObreshotka + volueKontrobreshotka + stoykaFron + itogZapas);
 
     // Пиломатериал под кровлю
-    let Pilomat = volueKrov * 24725;
-
-    // Количество металлочерепицы ОШИБКА В СМЕТЕ
+    let Pilomat =  Math.round(volueKrov * 24725);
+    document.getElementById("pil").innerHTML = Pilomat;
+    // Количество металлочерепицы 
     let cherepica = (length + 0.5) * lengthKrov * 2;
 
     // Стоимость кровли из металлочерепицы
-    let metalCherepica = cherepica * 2070;
-
+    let metalCherepica = Math.round( cherepica * 2070);
+    document.getElementById("metalCherepica").innerHTML = metalCherepica;
+    
     // Стоимость кровли
     let summ = Math.round(Pilomat + metalCherepica);
-    document.getElementById("summ").innerHTML = summ + ' руб.';
-    document.querySelector('.totalPriceRoof').innerHTML = summ + ' руб.';
-
+    document.querySelector(".summ").innerHTML = summ + ' руб.';
     return summ;
 }
