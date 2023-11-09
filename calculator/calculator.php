@@ -257,16 +257,23 @@ require './../Header/Head.php';
     <div class='modalStraping'>
       <div class="modal_main">
         <h1>Обвязка теплового контура</h1>
+
         <button class='modal_btn' id="vertObv">Обвязка вертикальная</button>
         <button class='modal_btn' id="gorizObv">Обвязка горизонтальная</button>
+
+
+
 
         <!-- Вторая модалка  -->
         <div class="win2">
           <div class='frstObv'>
+
             <h1 class="modalZag">Обвязка горизонтальная</h1>
             <p class='modalDescr'>Применяется для горизонтальной обвязки на паллетах упаковок с стеклотарой, 
               стройматериалами (кирпич, плитка), сельхозпродукцией и др. при использовании упаковочных защитных уголков.</p>
             
+
+
 
             <!-- <div class="material">
               <div class="contName">
@@ -300,6 +307,7 @@ require './../Header/Head.php';
             <h1 class="modalZag">Обвязка вертикальная</h1>
             <p class='modalDescr'>Вертикальная обвязка с использованием картонных защитных уголков применяется для 
               вертикальной обвязки на паллетах упаковок с гофрокартонными ящиками...</p>
+
             
 
             <div class="material">

@@ -6,6 +6,7 @@ require './../Header/Head.php';
 <body>
     <?php
     require './../Header/Header.php';
+    // require 'test.php';
     ?>
 
     <main>
@@ -35,22 +36,23 @@ require './../Header/Head.php';
                             </div>
                             <select class='select' id="floors">
                                 <option class='option' selected disabled>Количество этажей</option>
-                                <option class='option'>1</option>
-                                <option class='option'>2</option>
+                                    <option class='option'>1</option>
+                                    <option class='option'>2</option>
                             </select>
                             <button type="submit" class='continue'>Далее</button>
                         </form>
-                    </div>
                 </div>
             </div>
             <?php require './../aboutUs/aboutUs.php' ?>
-
+        </div>
     </main>
 
     <script src="sendForm.js"></script>
     <script src="slider.js"></script>
     <script src="./../aboutUs/aboutUs.js"></script>
     <script src="conditionZero.js"></script>
+    <script src="test.js"></script>
 </body>
+
 
 </html>
